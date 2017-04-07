@@ -1,7 +1,9 @@
 .container {
   text-align: center;
 }
-
+html {
+  background-color: #d62724;
+}
 body {
   background-image: url("cssimg/pizzabackground.jpg");
   background-repeat: no-repeat;
@@ -20,8 +22,8 @@ input #name {
 }
 
 .jumbotron {
-  margin-top: 2%;
-  border-radius: 1%;
+  margin-top: 1%;
+  border-radius: 2%;
   background-color: #f6a225;
 }
 
@@ -30,20 +32,21 @@ input #name {
   display: none;
   font-family: 'VT323', monospace;
   font-size: 30px;
-  max-width: 40%;
-  margin-left: 35%;
+  max-width: 50%;
+  margin-left: 25%;
 }
+
 
 .col-sm-6 {
   border-radius: 2%;
   margin-left: 9%;
-  margin-top: 5%;
+  margin-top: 4%;
   background-color: #f6a225;
   max-width: 32%;
 }
 
 .checkbox {
   text-align: left;
-  margin-left: 38%;
-  max-width: 24%;
+  margin-left: 34%;
+  max-width: 40%;
 }

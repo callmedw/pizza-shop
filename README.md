@@ -1,6 +1,7 @@
 # Pizza Shop
 
-#### _An interactive website that allows a customer to order a pizza, April 7, 2017_
+#### _An interactive website that allows a customer to order a pizza, April 7, 2017
+(https://github.com/callmedw/pizza-shop.git)_
 
 #### By Dana Weiss under the watchful eye of EpicodusPDX
 

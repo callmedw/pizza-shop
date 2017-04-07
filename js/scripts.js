@@ -42,7 +42,5 @@ $(document).ready(function() {
     $("span.order-total-receipt").text(newOrder.finalCost());
     $(".receipt").show();
     $("#input, #order-submit").hide();
-
-console.log(newOrder.finalCost());
   });
 });
