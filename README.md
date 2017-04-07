@@ -1,7 +1,7 @@
 # Pizza Shop
 
-#### _An interactive website that allows a customer to order a pizza, April 7, 2017
-(https://github.com/callmedw/pizza-shop.git)_
+#### An interactive website that allows a customer to order a pizza, April 7, 2017
+(https://github.com/callmedw/pizza-shop.git)
 
 #### By Dana Weiss under the watchful eye of EpicodusPDX
 
@@ -15,17 +15,17 @@ _This application will allow a customer to select a pizza of varying sizes and t
   * **Example Input:** "Name: John LuhPizza"
   * **Example Output:** "John LuhPizza, please select a pizza size"
 
-* A customer may select a size of pizza and see their subtotal"
+* A customer may select a size of pizza and see their total"
   * **Example Input:** "Medium"
-  * **Example Output:** "Medium Pizza $10.00"
+  * **Example Output:** "total is $10.00"
 
-* A customer may add a topping to their pizza and see an updated subtotal.
-  * **Example Input:** "Pepperoni"
-  * **Example Output:** "Medium Pepperoni Pizza $12.00"
+* A customer may add a topping to their pizza and see their total.
+  * **Example Input:** "Cheese"
+  * **Example Output:** "total is $12.00"
 
-* The customer can submit their order to get a total and see their complete order.
-  * **Example Input:** "Medium Pepperoni Pizza submit"
-  * **Example Output:** "John, LuhPiza, you've ordered a medium pepperoni pizza. Your total is $12.00"
+* A customer may add multiple toppings to their pizza and see their total.
+  * **Example Input:** "Cheese and Xtra Cheese"
+  * **Example Output:** "total is $14.00"
 
 ## Setup/Installation Requirements
 
