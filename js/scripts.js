@@ -2,50 +2,53 @@
 
 // Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
 
-function Pizza () {
-  this.size = [];
+function Pizza (size) {
+  this.size = size;
   this.topping = [];
   this.cost = 0;
 }
 
-// Pizza.prototype.finalCost = function (finalCost) {
-//   this.size += this.topping;
-// }
+Pizza.prototype.finalCost = function (finalCost) {
+  this.cost = (this.size += parseInt(this.topping));
+}
 
 
 
 //*--User Interface--*//
 $(document).ready(function() {
-  //new order//
+//new order variables//
   var topping = 0
   var size = 0
-  var newOrder = new Pizza();
+  var newOrder = new Pizza(size);
 
-  //get customer name//
-  $("form.customer-name").submit(function(event) {
-    event.preventDefault();
-    var customerName = $("input#name").val();
-    $(".name-receipt").text(customerName);
-  });
-
-  //submit function, create new Pizza//
+//submit function, create new Pizza//
   $("form.pizza-order").submit(function(event) {
     event.preventDefault();
-    var newOrder = new Pizza();
+    var newOrder = new Pizza(size);
 
-    //size//
-    var pizzaSize = parseInt($("select#size").val());
-    console.log(pizzaSize);
-    newOrder.size.push(pizzaSize);
+//name//
+    var customerName = $("input#name").val();
+    $(".name-receipt").text(customerName);
 
-    //topping//
+//size//
+    newOrder.size = $("select#size").val();
+    // newOrder.size.push(pizzaSize);
+console.log(newOrder.size);
+
+//topping//
     $("input:checkbox[name=topping]:checked").each(function(){
-       var allTopping = $(this).val();
-    //push both to Pizza cosnstructor//
-    newOrder.topping.push(allTopping)
-    });
+      var allTopping = $(this).val();
+console.log(allTopping);
+
+//push both to Pizza cosnstructor//
+      newOrder.topping.push(allTopping);
+    });
+
+//get final cost of order//
+    $("span.order-total-receipt").text(newOrder.finalCost());
+
 console.log(newOrder.topping);
 console.log(newOrder.size);
+console.log(newOrder.finalCost());
   });
-
-  });
+});
