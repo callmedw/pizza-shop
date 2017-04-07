@@ -1,6 +1,6 @@
 # Pizza Shop
 
-#### _An interactive website that allows a customer to order a pizza, April 7, 2017
+#### _An interactive website that allows a customer to order a pizza, April 7, 2017_
 
 #### By Dana Weiss under the watchful eye of EpicodusPDX
 

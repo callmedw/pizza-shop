@@ -6,13 +6,45 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
     <script src="js/jquery-3.2.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>________ENTER TITLE HERE______________</title>
+    <title>pizza-shop</title>
   </head>
   <body>
     <div class="container">
-<!--*-TOP--->
+<!--*---->
+      <div class="jumbotron">
+        <h1>Pizza Shop</h1>
+      </div>
 
-<!--*-BOTTOM--->
+      <form id="input"> <!--Begin-Input-Group-->
+        <div class="customerName">
+          <label for="name"></label>
+          <input id="name" class="form-control" placeholder=" please enter your name to begin your order" type="text">
+          <button type="submit" class="btn">Enter</button>
+        </div>
+      </form> <!-- End-Input-Group-->
+
+      <label for="size">What size Pizza would you like?</label>
+        <br>
+        <select id="size">
+          <option value="">Please choose a size...</option>
+          <option value="1">Small</option>
+          <option value="2">Medium</option>
+          <option value="3">Large</option>
+        </select>
+        <br>
+
+        <select id="topping">
+          <option value="">Please choose a topping...</option>
+          <option value="1">Cheese</option>
+          <option value="1">Pepperoni</option>
+          <option value="1">All Veggies</option>
+          <option value="1">All Meat</option>
+        </select>
+
+
+
+
+<!--*---->
     </div>
   </body>
 </html>
