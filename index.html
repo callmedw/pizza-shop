@@ -15,32 +15,61 @@
         <h1>Pizza Shop</h1>
       </div>
 
-      <form id="input"> <!--Begin-Input-Group-->
-        <div class="customerName">
+      <form id="input" class="customer-name"> <!--Begin-Input-Group-->
+        <div class="customer-name">
           <label for="name"></label>
           <input id="name" class="form-control" placeholder=" please enter your name to begin your order" type="text">
-          <button type="submit" class="btn">Enter</button>
+          <button id="name-submit" type="submit" class="btn">Enter</button>
         </div>
       </form> <!-- End-Input-Group-->
 
-      <label for="size">What size Pizza would you like?</label>
-        <br>
-        <select id="size">
-          <option value="">Please choose a size...</option>
-          <option value="1">Small</option>
-          <option value="2">Medium</option>
-          <option value="3">Large</option>
-        </select>
-        <br>
+      <form id="input" class="pizza-order">
+        <label for="size">What size Pizza would you like?</label>
+          <br>
+          <select id="size">
+            <option value="">Please choose a size...</option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+          </select>
+          <br>
 
-        <select id="topping">
-          <option value="">Please choose a topping...</option>
-          <option value="1">Cheese</option>
-          <option value="1">Pepperoni</option>
-          <option value="1">All Veggies</option>
-          <option value="1">All Meat</option>
-        </select>
 
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="topping" value="1">
+              cheese
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="topping" value="2">
+              pepperoni
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="topping" value="3">
+              all veggie
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="topping" value="3">
+              all meat
+            </label>
+          </div>
+
+
+          <div class="reciept">
+            <p>
+              <span class="name-receipt"></span>, your order of a <span class="size-receipt"></span> pizza with <span class="topping-receipt"></span>
+              comes to a total of <span class="order-total-receipt"></span>! Thank you for your order!
+            </p>
+          </div>
+
+          <button id="order-submit" type="submit" class="btn btn-primary">Submit Order</button>
+        </form>
 
 
 
