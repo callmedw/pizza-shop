@@ -1,9 +1,49 @@
 .container {
   text-align: center;
 }
-.body {
+
+body {
+  background-image: url("cssimg/pizzabackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
   text-align: center;
+  font-family: 'Muli', sans-serif;
 }
+
 .customerName {
   text-align: center;
+}
+
+input #name {
+  text-align: center;
+}
+
+.jumbotron {
+  margin-top: 2%;
+  border-radius: 1%;
+  background-color: #f6a225;
+}
+
+.receipt {
+  background-color: #f6a225;
+  display: none;
+  font-family: 'VT323', monospace;
+  font-size: 30px;
+  max-width: 40%;
+  margin-left: 35%;
+}
+
+.col-sm-6 {
+  border-radius: 2%;
+  margin-left: 9%;
+  margin-top: 5%;
+  background-color: #f6a225;
+  max-width: 32%;
+}
+
+.checkbox {
+  text-align: left;
+  margin-left: 38%;
+  max-width: 24%;
 }

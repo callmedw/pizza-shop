@@ -6,71 +6,89 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
     <script src="js/jquery-3.2.0.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
     <title>pizza-shop</title>
   </head>
   <body>
     <div class="container">
 <!--*---->
-      <div class="jumbotron">
-        <h1>Pizza Shop</h1>
-      </div>
-
-      <form id="input" class="customer-name"> <!--Begin-Input-Group-->
-        <div class="customer-name">
-          <label for="name"></label>
-          <input id="name" class="form-control" placeholder="please type your name and then begin your order" type="text">
+      <div class="row">
+        <div class="jumbotron">
+          <h1>Pizza Shop</h1>
         </div>
-      </form>
+      </div>
       <br>
-      <form id="input" class="pizza-order">
-        <label for="size">What size Pizza would you like?</label>
+
+      <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-6">
+          <form id="input" class="customer-name"> <!--Begin-Input-Group-->
+            <div class="customer-name">
+              <label for="name">Enter your name for the order!</label>
+              <input id="name" class="form-control" placeholder="please type your name and then begin your order" type="text">
+            </div>
+          </form>
           <br>
-          <select id="size">
-            <option value="">Please choose a size...</option>
-            <option value="1">Small</option>
-            <option value="2">Medium</option>
-            <option value="3">Large</option>
-          </select>
+          <form id="input" class="pizza-order">
+            <label for="size">What size Pizza would you like?</label>
+              <br>
+              <select id="size">
+                <option value="">Please choose a size...</option>
+                <option value="1">Small</option>
+                <option value="2">Medium</option>
+                <option value="3">Large</option>
+              </select>
+          <br>
           <br>
 
-
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="topping" value="1">
-              cheese
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="topping" value="1">
-              pepperoni
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="topping" value="1">
-              all veggie
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="topping" value="1">
-              all meat
-            </label>
-          </div>
-
-          <button id="order-submit" type="submit" class="btn btn-primary">Submit Order</button>
-          <br>
-          
-          <div class="reciept">
-            <p>
-              <span class="name-receipt"></span>, your order of a <span class="size-receipt"></span> pizza with <span class="topping-receipt"></span>
-              comes to a total of $<span class="order-total-receipt"></span>.00! Thank you for your order!
-            </p>
-          </div>
-        </form>
+          <label for="topping">What toppings would you like on your Pizza?</label>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="topping" value="1">
+                cheese
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="topping" value="1">
+                pepperoni
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="topping" value="1">
+                all veggie
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="topping" value="1">
+                all meat
+              </label>
+            </div>
 
 
+              <button id="order-submit" type="submit" class="btn btn-danger">Submit Order</button>
+              <p></p>
+          </form>
+
+            <div class="receipt">
+              <p>
+                <span class="name-receipt"></span>, your order
+                comes to a total of $<span class="order-total-receipt"></span>.00. Thank you for your order!
+              </p>
+            </div>
+        </div>
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-1">
+        </div>
+      </div>
 
 <!--*---->
     </div>
